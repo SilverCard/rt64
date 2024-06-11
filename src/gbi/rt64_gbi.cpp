@@ -70,7 +70,7 @@ namespace RT64 {
     // 
     //                  Length      Hash                    Known instances               
     //     
-    static std::array<GBISegment, 21> textSegments = {
+    static std::array<GBISegment, 23> textSegments = {
             GBISegment{ 0x1408,     0xF50165C013FCB8A2ULL,  { &F3D_SM64 } },
             GBISegment{ 0x1430,     0x9A7772037D709388ULL,  { &F3DEX_1_21 } },
             GBISegment{ 0x13D0,     0x1BEA638E869B0195ULL,  { &F3DLX_1_21_REJ } }, // Needs confirmation.
@@ -92,9 +92,11 @@ namespace RT64 {
             GBISegment{ 0x18C0,     0x7F6DEA6A33FF67BDULL,  { &S2DEX2_FIFO_2_05 } },
             GBISegment{ 0x18C0,     0x252C09A4BBB2F9D3ULL,  { &S2DEX2_FIFO_2_05_SAFE } },
             GBISegment{ 0x18C0,     0x9300F34F3B438634ULL,  { &S2DEX2_FIFO_2_08 } },
+            GBISegment{ 0x13E0,     0X28825EEF49EE29CFULL,  { &F3DEX_1_21 } }, // MK64
+            GBISegment{ 0x1410,     0XF1CC01CCC3607D27ULL,  { &F3DEX_1_21 } }, // MK64, 4 players - Broken
     };
 
-    static std::array<GBISegment, 21> dataSegments = {
+    static std::array<GBISegment, 23> dataSegments = {
             GBISegment{ 0x800,      0x276AC049785A7E70ULL,  { &F3D_SM64 } },
             GBISegment{ 0x800,      0x4B5FDED20C137EC1ULL,  { &F3DEX_1_21 } },
             GBISegment{ 0x800,      0x3828B4F75B0A0E6AULL,  { &F3DEX_1_23 } },
@@ -116,6 +118,8 @@ namespace RT64 {
             GBISegment{ 0x390,      0x47829093527F366BULL,  { &S2DEX2_FIFO_2_05 } }, // Needs confirmation.
             GBISegment{ 0x390,      0x01DE3936615B8C9CULL,  { &S2DEX2_FIFO_2_05_SAFE } },
             GBISegment{ 0x390,      0x50EF0DFBD3A8CD0FULL,  { &S2DEX2_FIFO_2_08 } },
+            GBISegment{ 0x800,      0X4BB61D72241EFD23ULL,  { &F3DEX_1_21 } }, // MK64
+            GBISegment{ 0x800,      0X58641378A6D4FF0CULL,  { &F3DEX_1_21 } }, // MK64, 4 players - Broken
     };
 
     static bool textAndDataSegmentsSorted = false;
